@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attar Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner"> 
+      <div class="brand">
+        <div class="logo">
+  <img src="images/logo.png" alt="Attar Store Logo">
+</div>
+        <div class="brand-text">
+          <h1>ATTAR STORE</h1>
+          <p>Smell Fresh. Feel Confident.</p>
+        </div>
+      </div>
+
+      <div class="right-tools">
+        <input id="searchInput" class="search" type="text" placeholder="Search attar..." />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <p id="resultText" class="muted result-text">Showing all attars</p>
+
+    <div id="productGrid" class="grid">
+
+      <!-- Product 01 -->
+      <article class="card product" data-id="p1" data-name="strawberry">
+        <div class="img-box">
+          <span class="tag new">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar1.png" alt="Strawberry Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Strawberry</h3>
+          <p class="muted">Long-lasting | Sweet fruity scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Strawberry" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 02 -->
+      <article class="card product" data-id="p2" data-name="sabaya">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar2.png" alt="Sabaya Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Sabaya</h3>
+          <p class="muted">Premium essence | Modern</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Sabaya" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 03 -->
+      <article class="card product" data-id="p3" data-name="cr7">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar3.png" alt="CR7 Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">CR7</h3>
+          <p class="muted">Fresh sporty | Strong vibe</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="CR7" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 04 -->
+      <article class="card product" data-id="p4" data-name="1 million">
+        <div class="img-box">
+          <span class="tag sale">BEST</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar4.png" alt="1 Million Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">1 Million</h3>
+          <p class="muted">Bold luxury | Party scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="1 Million" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 05 -->
+      <article class="card product" data-id="p5" data-name="dove">
+        <div class="img-box">
+          <span class="tag new">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar5.png" alt="Dove Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Dove</h3>
+          <p class="muted">Soft clean | Gentle daily</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Dove" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 06 -->
+      <article class="card product" data-id="p6" data-name="chocolate">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar6.png" alt="Chocolate Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Chocolate</h3>
+          <p class="muted">Sweet creamy | Cozy scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Chocolate" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 07 -->
+      <article class="card product" data-id="p7" data-name="biscuit">
+        <div class="img-box">
+          <span class="tag">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar7.png" alt="Biscuit Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Biscuit</h3>
+          <p class="muted">Warm snack vibe | Sweet</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Biscuit" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 08 -->
+      <article class="card product" data-id="p8" data-name="jasmine">
+        <div class="img-box">
+          <span class="tag sale">BEST</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar8.png" alt="Jasmine Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Jasmine</h3>
+          <p class="muted">Floral classic | Calm mood</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Jasmine" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 09 -->
+      <article class="card product" data-id="p9" data-name="red rose">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar9.png" alt="Red Rose Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Red Rose</h3>
+          <p class="muted">Romantic rose | Strong floral</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Red Rose" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 10 -->
+      <article class="card product" data-id="p10" data-name="soft">
+        <div class="img-box">
+          <span class="tag">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar10.png" alt="Soft Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Soft</h3>
+          <p class="muted">Powdery clean | Easy wear</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Soft" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 11 -->
+      <article class="card product" data-id="p11" data-name="lacoste">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar11.png" alt="Lacoste Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Lacoste</h3>
+          <p class="muted">Fresh green | Daytime scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Lacoste" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 12 -->
+      <article class="card product" data-id="p12" data-name="shadha">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar12.png" alt="Shadha Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Shadha</h3>
+          <p class="muted">Arabic touch | Premium</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Shadha" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 13 -->
+      <article class="card product" data-id="p13" data-name="night queen">
+        <div class="img-box">
+          <span class="tag sale">BEST</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar13.png" alt="Night Queen Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Night Queen</h3>
+          <p class="muted">Deep floral | Night scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Night Queen" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 14 -->
+      <article class="card product" data-id="p14" data-name="lovely">
+        <div class="img-box">
+          <span class="tag">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar14.png" alt="Lovely Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Lovely</h3>
+          <p class="muted">Soft sweet | Everyday</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Lovely" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 15 -->
+      <article class="card product" data-id="p15" data-name="rexona">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar15.png" alt="Rexona Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Rexona</h3>
+          <p class="muted">Fresh clean | Active feel</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Rexona" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 16 -->
+      <article class="card product" data-id="p16" data-name="lux">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar16.png" alt="Lux Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Lux</h3>
+          <p class="muted">Luxury floral | Smooth</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Lux" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 17 -->
+      <article class="card product" data-id="p17" data-name="blue lady">
+        <div class="img-box">
+          <span class="tag sale">BEST</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar17.png" alt="Blue Lady Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Blue Lady</h3>
+          <p class="muted">Elegant | Classic floral</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Blue Lady" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 18 -->
+      <article class="card product" data-id="p18" data-name="figo boss">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar18.png" alt="Figo Boss Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Figo Boss</h3>
+          <p class="muted">Strong premium | Office scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Figo Boss" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 19 -->
+      <article class="card product" data-id="p19" data-name="royal marriage">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar19.png" alt="Royal Marriage Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Royal Marriage</h3>
+          <p class="muted">Royal blend | Special</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Royal Marriage" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 20 -->
+      <article class="card product" data-id="p20" data-name="classic">
+        <div class="img-box">
+          <span class="tag">CLASSIC</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar20.png" alt="Classic Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Classic</h3>
+          <p class="muted">Timeless | Balanced scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Classic" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 21 -->
+      <article class="card product" data-id="p21" data-name="pineapple">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar21.png" alt="Pineapple Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Pineapple</h3>
+          <p class="muted">Fruity vibe | Fresh feel</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Pineapple" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 22 -->
+      <article class="card product" data-id="p22" data-name="cool breeze">
+        <div class="img-box">
+          <span class="tag new">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar22.png" alt="Cool Breeze Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Cool Breeze</h3>
+          <p class="muted">Cool fresh | Clean air vibe</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Cool Breeze" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 23 -->
+      <article class="card product" data-id="p23" data-name="andriya">
+        <div class="img-box">
+          <span class="tag new">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar23.png" alt="Andriya Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Andriya</h3>
+          <p class="muted">Premium | Smooth scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Andriya" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 24 -->
+      <article class="card product" data-id="p24" data-name="verban">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar24.png" alt="Verban Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Verban</h3>
+          <p class="muted">Fresh vibe | Light scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Verban" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 25 -->
+      <article class="card product" data-id="p25" data-name="mix fruit">
+        <div class="img-box">
+          <span class="tag">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar25.png" alt="Mix Fruit Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Mix Fruit</h3>
+          <p class="muted">Fruity mix | Sweet</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Mix Fruit" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 26 -->
+      <article class="card product" data-id="p26" data-name="passion">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar26.png" alt="Passion Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Passion</h3>
+          <p class="muted">Sweet mood | Premium feel</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Passion" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 27 -->
+      <article class="card product" data-id="p27" data-name="green apple">
+        <div class="img-box">
+          <span class="tag">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar27.png" alt="Green Apple Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Green Apple</h3>
+          <p class="muted">Fresh fruit | Light sweet</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Green Apple" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 28 -->
+      <article class="card product" data-id="p28" data-name="velvet">
+        <div class="img-box">
+          <span class="tag hot">HOT</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar28.png" alt="Velvet Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Velvet</h3>
+          <p class="muted">Smooth | Strong premium</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Velvet" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 29 -->
+      <article class="card product" data-id="p29" data-name="black rani">
+        <div class="img-box">
+          <span class="tag">NEW</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar29.png" alt="Black Rani Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Black Rani</h3>
+          <p class="muted">Bold | Strong scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Black Rani" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 30 -->
+      <article class="card product" data-id="p30" data-name="mari gold">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar30.png" alt="Mari Gold Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Mari Gold</h3>
+          <p class="muted">Floral | Calm scent</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Mari Gold" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 31 -->
+      <article class="card product" data-id="p31" data-name="lavender">
+        <div class="img-box">
+          <span class="tag sale">BEST</span>
+          <span class="stock low">Low Stock</span>
+          <img class="pimg" src="images/Attar31.png" alt="Lavender Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Lavender</h3>
+          <p class="muted">Relaxing | Smooth floral</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Lavender" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 32 -->
+      <article class="card product" data-id="p32" data-name="silver">
+        <div class="img-box">
+          <span class="tag">TREND</span>
+          <span class="stock in">In Stock</span>
+          <img class="pimg" src="images/Attar32.png" alt="Silver Attar">
+        </div>
+        <div class="card-body">
+          <h3 class="pname">Silver</h3>
+          <p class="muted">Smooth fresh | Clean</p>
+          <div class="price-row">
+            <span class="price">LKR 250</span>
+            <span class="old">LKR 350</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-dark wa-btn" data-product="Silver" href="#" target="_blank">Order on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Attar Store</p>
+      <p class="muted">Search + WhatsApp Order</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
